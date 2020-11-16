@@ -1,0 +1,17 @@
+html, body {
+    color: blanchedalmond;
+    background-image: linear-gradient(to right bottom, rgb(31, 10, 88), rgb(194, 177, 79));
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.spacer {
+    margin-bottom: 1rem;
+}
+
+#move-right {
+    float: right;
+}

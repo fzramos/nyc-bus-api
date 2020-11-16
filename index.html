@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MTA Bus</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Get the stops nearest to you:</h1>
+        <form id="myForm" onsubmit="return false;">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="lat">Latitude</label>
+                  <input type="text" class="form-control" id="lat" placeholder="-73.985656">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="long">Longitude</label>
+                    <input type="text" class="form-control" id="long" placeholder="40.748433">
+                  </div>
+              </div>
+            <button type="button" class="btn btn-primary spacer" onclick="getCloseStops()">Get Weather</button>
+            <button type="button" class="btn btn-primary spacer justify-content-end" id="move-right" onclick="getLocation()" >Use Current Location</button>
+        </form>
+
+        <h1>This is where the list of top 5 nearest bus stops</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
